@@ -38,3 +38,13 @@ println("My favorite foods: ")
 for i in favorite_foods
 	println(i)
 end
+
+# Task 5: Functions
+function print_square(n)
+	println(n * n)
+end
+
+print_square(2)
+print_square(-3)
+print_square(0)
+print_square(3000000000)

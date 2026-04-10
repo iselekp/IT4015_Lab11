@@ -24,3 +24,17 @@ movie_info = Dict("title" => "Redline", "director" => "Takeshi Koike", "year" =>
 println(movie_info)
 
 # Task 4: Control Flow
+print("Enter a number to test its polarity: ")
+num = parse(Int, readline())
+if num > 0
+	println(num, " is positive.")
+elseif num < 0
+	println(num, " is negative.")
+else
+	println(num, " is zero.")
+end
+
+println("My favorite foods: ")
+for i in favorite_foods
+	println(i)
+end

@@ -4,15 +4,15 @@ println("Hello, Julia world")
 
 # Task 2: Variables and Data Types
 print("What is your name? ")
-#name = readline()
+name = readline()
 print("What is your age? ")
-#age = readline()
+age = parse(Int, readline())
 print("What is your height in feet? ")
-#height = readline()
+height = readline()
 
-#println("Name: ", name)
-#println("Age: ", age)
-#println("Height: ", height)
+println("Name: ", name)
+println("Age: ", age)
+println("Height: ", height)
 
 println()
 
@@ -22,6 +22,8 @@ println(favorite_foods)
 
 movie_info = Dict("title" => "Redline", "director" => "Takeshi Koike", "year" => "2009")
 println(movie_info)
+
+println()
 
 # Task 4: Control Flow
 print("Enter a number to test its polarity: ")
@@ -34,17 +36,28 @@ else
 	println(num, " is zero.")
 end
 
+println()
+
 println("My favorite foods: ")
 for i in favorite_foods
 	println(i)
 end
 
+println()
+
 # Task 5: Functions
 function print_square(n)
-	println(n * n)
+	println(n, " squared is ", n * n)
 end
 
 print_square(2)
 print_square(-3)
 print_square(0)
 print_square(3000000000)
+
+println()
+
+# Task 6: Combining Concepts in a Script
+# Already asked for name and age above, so just telling how old in 5 years
+ageIn5 = age + 5
+println("Hello ", name, ". You will be ", ageIn5, " years old in five years.")
